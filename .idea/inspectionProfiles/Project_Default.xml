@@ -1,0 +1,37 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="asgiref" />
+          <option value="certifi" />
+          <option value="charset-normalizer" />
+          <option value="Django" />
+          <option value="django-appconf" />
+          <option value="django-compressor" />
+          <option value="django-ranged-response" />
+          <option value="django-select2" />
+          <option value="django-simple-captcha" />
+          <option value="django-tinymce" />
+          <option value="django-vite" />
+          <option value="ghasedak_sms" />
+          <option value="idna" />
+          <option value="jalali_core" />
+          <option value="jdatetime" />
+          <option value="mysqlclient" />
+          <option value="pillow" />
+          <option value="python-dateutil" />
+          <option value="rcssmin" />
+          <option value="requests" />
+          <option value="rjsmin" />
+          <option value="six" />
+          <option value="sqlparse" />
+          <option value="typing_extensions" />
+          <option value="tzdata" />
+          <option value="urllib3" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

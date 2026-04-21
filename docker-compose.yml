@@ -1,0 +1,12 @@
+services:
+  backend:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    container_name: backend
+    volumes:
+      - ./core/:/app # bind mount
+    ports:
+      - "80:8000"  
+    environment:
+      - SECRET_KEY=test
+      - DEBUG=True
