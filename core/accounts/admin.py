@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import User
+from .models import User, Profile
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
@@ -21,3 +21,5 @@ class UserAdmin(admin.ModelAdmin):
             'fields': ('last_login',)
         })
     ]
+
+admin.site.register(Profile)
