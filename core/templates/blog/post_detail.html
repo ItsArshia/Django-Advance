@@ -5,15 +5,15 @@
     <title>{{ object.title }}</title>
 </head>
 <body>
-    <h1>{{ object.title }}</h1>
-    <hr>
-    <p>{{ object.content }}</p>
-    <a href="{% url 'post-update' object.id %}">edit</a>
-    <a href="{% url 'post-remove' object.id %}">remove</a>
-    <br/>
-    <br/>
-    <br/>
-    <p>author: {{ object.author.first_name }} {{ object.author.last_name }}</p>
-    <img src="{{ object.author.image.url }}" alt="{{ object.title }}">
+  <h1>{{ object.title }}</h1>
+  <hr>
+  <p>{{ object.content }}</p>
+  <a href="{% url 'post-update' object.id %}">edit</a>
+  <a href="{% url 'post-remove' object.id %}">remove</a>
+  <br/>
+  <br/>
+  <br/>
+  <p>author: {{ object.author.first_name }} {{ object.author.last_name }}</p>
+  <img src="{{ object.author.image.url }}" alt="{{ object.title }}">
 </body>
 </html>
