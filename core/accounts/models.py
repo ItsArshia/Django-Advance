@@ -50,7 +50,7 @@ class User(AbstractBaseUser, PermissionsMixin):
   create_at = models.DateTimeField(auto_now_add=True)
   updated_at = models.DateTimeField(auto_now=True)
 
-  object = UserManager()
+  objects = UserManager()
 
   def __str__(self):
     return self.email

@@ -1,6 +1,6 @@
 from django.views.generic.base import TemplateView, RedirectView
 from django.views.generic import ListView, DetailView, FormView, CreateView, UpdateView, DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
 from .models import Post
 from .forms import PostForm
 
@@ -20,7 +20,8 @@ class RedirectToMaktab(RedirectView):
     url = "https://maktabkhooneh.org"
 
 
-class PostListView(LoginRequiredMixin, ListView):
+class PostListView(PermissionRequiredMixin, LoginRequiredMixin, ListView):
+    permission_required = 'blog.view_post'
     model = Post
 
     context_object_name = "posts"
