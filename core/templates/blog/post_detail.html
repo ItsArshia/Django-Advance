@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ object.title }}</title>
+</head>
+<body>
+    <h1>{{ object.title }}</h1>
+    <hr>
+    <p>{{ object.content }}</p>
+    <a href="{% url 'post-update' object.id %}">edit</a>
+    <a href="{% url 'post-remove' object.id %}">remove</a>
+</body>
+</html>

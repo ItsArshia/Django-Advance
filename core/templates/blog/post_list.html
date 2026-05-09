@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post List</title>
+</head>
+<body>
+    <h1>all Posts</h1>
+    <div style="display: flex; gap: 50px; padding-inline: 200px">
+        {% for post in posts %}
+            <div style="background-color: #5d836a; display: flex;flex-direction: column;border-radius: 12px;color: wheat; padding: 20px">
+                <a href="{{ post.id }}"><h2>{{ post }}</h2></a>
+                <p>{{ post.content }}</p>
+                <span>{{ post.author.email }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+
+    
+
+</body>
+</html>
